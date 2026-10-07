@@ -4,7 +4,8 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/portfolio/' : '/',
+  // Netlify serves from the domain root; GitHub Pages serves from /portfolio/
+  base: process.env.NETLIFY ? '/' : mode === 'production' ? '/portfolio/' : '/',
   plugins: [
     react(),
     tailwindcss(),
