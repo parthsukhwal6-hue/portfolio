@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import EducationPage from './pages/EducationPage'
@@ -9,7 +9,7 @@ import SkillsPage from './pages/SkillsPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -19,7 +19,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

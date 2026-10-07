@@ -103,8 +103,18 @@
 
 .main-nav a:hover,
 .main-nav a:focus-visible,
+.main-nav__link--active,
 .topbar-contact:hover,
 .topbar-contact:focus-visible {
+  color: var(--accent);
+}
+
+.main-nav__link {
+  position: relative;
+  color: var(--soft);
+}
+
+.main-nav__link--active {
   color: var(--accent);
 }
 
