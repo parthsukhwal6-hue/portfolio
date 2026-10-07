@@ -1,5 +1,5 @@
 import './App.css'
-<<<<<<< HEAD
+ HEAD
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
@@ -21,7 +21,8 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </HashRouter>
-=======
+  )
+}
 
 const projects = [
   {
@@ -410,7 +411,6 @@ function App() {
         </a>
       </footer>
     </div>
->>>>>>> origin/main
   )
 }
 
