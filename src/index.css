@@ -1,15 +1,28 @@
 :root {
+<<<<<<< HEAD
   --sans: "Aptos", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --heading: "Palatino Linotype", Palatino, Georgia, serif;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 
   font-family: var(--sans);
+=======
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+>>>>>>> origin/main
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
   color: #20392d;
   background: #f3efe5;
+=======
+
+  --sans: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  color: #f3f2ef;
+  background: #090a0d;
+>>>>>>> origin/main
 
   font-optical-sizing: auto;
   font-weight: 400;
@@ -36,6 +49,11 @@ a {
 }
 
 ::selection {
+<<<<<<< HEAD
   color: #fffdf7;
   background: #38664d;
+=======
+  color: #17100c;
+  background: #f6a36c;
+>>>>>>> origin/main
 }

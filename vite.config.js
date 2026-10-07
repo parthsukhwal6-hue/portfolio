@@ -3,6 +3,7 @@ import babel from '@rolldown/plugin-babel'
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
+<<<<<<< HEAD
 export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/portfolio/' : '/',
   plugins: [
@@ -11,3 +12,14 @@ export default defineConfig(({ mode }) => ({
     babel({ presets: [reactCompilerPreset()] })
   ]
 }))
+=======
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+
+    babel({ presets: [reactCompilerPreset()] })
+  ],
+})
+>>>>>>> origin/main
